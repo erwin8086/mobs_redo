@@ -26,6 +26,7 @@ minetest.register_craftitem("mobs:meat_raw", {
 	description = S("Raw Meat"),
 	inventory_image = "mobs_meat_raw.png",
 	on_use = minetest.item_eat(3),
+	spoil=3,
 })
 
 -- cooked meat
@@ -33,6 +34,7 @@ minetest.register_craftitem("mobs:meat", {
 	description = S("Meat"),
 	inventory_image = "mobs_meat.png",
 	on_use = minetest.item_eat(8),
+	spoil=3,
 })
 
 minetest.register_craft({
